@@ -12,7 +12,7 @@ class Home extends Component{
                             color: green;
                         }
                         div{
-                            background: #ccc
+                            background: white
                         }
                     `}
                     

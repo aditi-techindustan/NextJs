@@ -411,7 +411,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 6
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
@@ -420,10 +420,22 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, "Hello, from Blog page"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "/static/image.jpg",
+        alt: "my image",
+        style: {
+          height: '200px',
+          width: '200px'
+        },
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 8
         },
         __self: this
-      }, "Hello, from Blog page"));
+      }));
     }
   }]);
 
