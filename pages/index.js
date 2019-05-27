@@ -12,15 +12,26 @@ function IndexPage() {
         <div>
             <Head>
                 <title>Next Js App</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-                {/* key property make sure that the tag is only rendered once */}
-            </Head>
-            <Head>
-                <meta
-                    name="viewport"
-                    content="initial-scale=1.2, width=device-width"
-                    key="viewport"
+                <meta name="viewport" content="initial-scale=1.0, width=device-width"  />
+                {/* <script src="https://unpkg.com/react/umd/react.production.js" crossorigin />
+
+                <script
+                    src="https://unpkg.com/react-dom/umd/react-dom.production.js"
+                    crossorigin
                 />
+
+                <script
+                    src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+                    crossorigin
+                /> */}
+
+                <link
+                    rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                    crossorigin="anonymous"
+                />
+                {/* key property make sure that the tag is only rendered once */}
             </Head>
             <Home />
         </div>

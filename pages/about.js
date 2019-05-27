@@ -23,6 +23,9 @@ class about extends Component{
                 console.log(`Route to ${url} was cancelled`)
             }
         })
+        Router.events.on('beforeHistoryChange',handleRouteChange)
+        Router.events.off('beforeHistoryChange',handleRouteChange)
+
         return(
             <React.Fragment>
                 <h2>Here is About page!</h2>
