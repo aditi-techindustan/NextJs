@@ -2194,7 +2194,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FContact&absolutePagePath=%2Fhome%2Fsaloni%2Fnextjs-app%2Fpages%2FContact.js ***!
   \**************************************************************************************************************************/
@@ -2217,5 +2217,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=Contact.js.map

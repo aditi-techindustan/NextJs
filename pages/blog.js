@@ -5,7 +5,7 @@ class Blog extends Component {
     render() {
         return (
             <div>
-                <h1>Hello, from Blog page</h1>
+                <h1 style={{color:"red"}}>Hello, from Blog page</h1>
             </div>
         );
     }

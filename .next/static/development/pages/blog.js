@@ -2178,6 +2178,9 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+        style: {
+          color: "red"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
@@ -2194,7 +2197,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fhome%2Fsaloni%2Fnextjs-app%2Fpages%2Fblog.js ***!
   \********************************************************************************************************************/
@@ -2217,5 +2220,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
