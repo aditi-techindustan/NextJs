@@ -13,18 +13,6 @@ function IndexPage() {
             <Head>
                 <title>Next Js App</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"  />
-                {/* <script src="https://unpkg.com/react/umd/react.production.js" crossorigin />
-
-                <script
-                    src="https://unpkg.com/react-dom/umd/react-dom.production.js"
-                    crossorigin
-                />
-
-                <script
-                    src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-                    crossorigin
-                /> */}
-
                 <link
                     rel="stylesheet"
                     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
