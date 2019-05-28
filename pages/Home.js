@@ -8,13 +8,12 @@ class Home extends Component {
             <React.Fragment>
                 <Header />
                 <ReactJumbotron />
-                <Row style={{padding:'50px'}}>
-                    <ReactCard />
+                <Row>
+                    <ReactCard style={{marginLeft:10}} />
                 </Row>
             </React.Fragment>
-
         )
     }
 }
 
-export default Home
+export default Home;

@@ -12,7 +12,7 @@ class about extends Component{
 
         const handleRouteChange  = (url)=>{
             console.log('App is changing to :', url )
-        };//fires when a route starts to change
+        }//fires when a route starts to change
 
         Router.events.on('routeChangeStart',handleRouteChange)
 
