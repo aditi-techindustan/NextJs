@@ -6671,7 +6671,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/home/saloni/nextjs-app/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/saloni/Documents/projects/nextjs-app/.next");
       return error;
     }
   };
