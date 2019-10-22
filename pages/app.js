@@ -1,5 +1,7 @@
 import React,{Component} from "react";
 import App,{Container} from 'next/app';
+import actions from '../actions';
+import { connect } from "react-redux";
 
 class Layout extends React.Component{
     render(){
@@ -8,8 +10,17 @@ class Layout extends React.Component{
     }
 }
 
-export default class MyApp extends Component{
+componentDidMount = () => {
+  actions.testAction({
+      firstName:'test',
+      lastName:'testing'
+  })
+}
+
+
+class MyApp extends Component{
     render(){
+        console.log(this.props.testInfo,"testInfo")
         return(
             <Container>
                 <Layout>
@@ -19,3 +30,11 @@ export default class MyApp extends Component{
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {
+      testInfo: state.test
+    };
+  };
+
+export default connect(mapStateToProps)(MyApp)

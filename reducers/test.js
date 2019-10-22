@@ -1,31 +1,13 @@
 const initialState = {
-    lastUpdate: 0,
-    light: false,
-    count: 0
+    info:{}
   }
   
   export default function(state = initialState, action){
     switch (action.type) {
-      case 'TICK':
+      case 'TEST_TYPE':
         return {
           ...state,
-          lastUpdate: action.lastUpdate,
-          light: !!action.light
-        }
-      case 'INCREMENT':
-        return {
-          ...state,
-          count: state.count + 1
-        }
-      case 'DECREMENT':
-        return {
-          ...state,
-          count: state.count - 1
-        }
-      case 'RESET':
-        return {
-          ...state,
-          count: initialState.count
+         info:payload
         }
       default:
         return state
