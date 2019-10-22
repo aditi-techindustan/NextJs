@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Home from './Home';
 import dynamic from "next/dynamic";
-import Head from "next/head"
+import Head from "next/head";
+import actions from '../actions';
+
 
 const loader = dynamic(() => import("./Home"), {
     loading: () => <div>loading....</div>

@@ -1,5 +1,7 @@
 import types from '../types';
 import store from '../store';
+import { useDispatch } from 'react-redux';
+import { withRedux } from '../lib/redux'
 
 const {dispatch} = store;
 
