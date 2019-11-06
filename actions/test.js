@@ -1,9 +1,7 @@
 import types from '../types';
-import store from '../store';
-import { useDispatch } from 'react-redux';
-import { withRedux } from '../lib/redux'
+import {initializeStore} from '../store';
 
-const {dispatch} = store;
+const {dispatch} = initializeStore;
 
 export function testAction(payload){
     console.log(payload,"payload")
