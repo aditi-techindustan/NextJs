@@ -2,39 +2,40 @@ import React,{Component} from "react";
 import App,{Container} from 'next/app';
 import actions from '../actions';
 import { connect } from "react-redux";
+import { makeStore } from 'redux';
+import { Provider } from 'react-redux';
+import withRedux from 'next-redux-wrapper';
 
-class Layout extends React.Component{
-    render(){
-        const {children} = this.props
-        return <div className="layout">{children}</div>
+const reducer = (state = { foo: '' }, action) => {
+    switch (action.type) {
+        case 'FOO':
+            return { ...state, foo: action.payload };
+        default:
+            return state;
     }
-}
+};
 
-componentDidMount = () => {
-  actions.testAction({
-      firstName:'test',
-      lastName:'testing'
-  })
-}
-
-
-class MyApp extends Component{
-    render(){
-        console.log(this.props.testInfo,"testInfo")
-        return(
-            <Container>
-                <Layout>
+const MyApp = ({Component, pageProps , store})=>{
+    return(
+        <Container>
+            <Provider store={store}>
                     <Component {...pageProps}/>
-                </Layout>
-            </Container>
-        )
-    }
+            </Provider>
+        </Container>
+    )
 }
 
-const mapStateToProps = state => {
-    return {
-      testInfo: state.test
-    };
-  };
+MyApp.getInitialProps = async({ Component,ctx})=>{
+        ctx.store.dispatch({ type: 'FOO', payload: 'foo' });
+        const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+        return { pageProps };
+}
 
-export default connect(mapStateToProps)(MyApp)
+// const mapStateToProps = state => {
+//     return {
+//       testInfo: state.test
+//     };
+//   };
+
+export default withRedux(makeStore)(MyApp);
+// export default connect(mapStateToProps)(MyApp)

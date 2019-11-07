@@ -17,8 +17,9 @@ const Home = () =>{
     )
 }
 
-Home.getInitialProps = ({}) =>{
-    actions.testAction({name:"test",desc:"new test"})  
-}
+// Home.getInitialProps = ({}) =>{
+//     actions.testAction({name:"test",desc:"new test"})  
+// }
 
-export default withRedux(Home);
+export default Home;
+// export default withRedux(Home);

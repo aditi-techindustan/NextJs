@@ -1,7 +1,7 @@
 import types from '../types';
-import {initializeStore} from '../store';
+import store from '../store';
 
-const {dispatch} = initializeStore;
+const {dispatch} = store;
 
 export function testAction(payload){
     console.log(payload,"payload")
